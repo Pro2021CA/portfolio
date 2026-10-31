@@ -1,0 +1,133 @@
+#header {
+    color: #FFFFFF;
+
+    ul{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        gap: 40px;
+        list-style: none;
+        padding: 0;
+    }
+}
+
+
+a:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+@keyframes zoomInAnimation {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.1); opacity: 1; }
+}
+
+#header li{
+    p:hover{
+        transform-origin: left center;
+        animation-name: zoomInAnimation;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: both;
+    }
+}
+
+
+.projects div{
+    border-radius: 10px;
+    background: #5956fc;
+    background: linear-gradient(90deg,rgba(89, 86, 252, 1) 0%, rgba(0, 0, 222, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding-right: 5%;
+    width: 100%;
+    padding-top: 0%;
+
+
+    p{
+        color: #E0F2FF;
+        margin-left: 10%;
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+    a{
+        color: #FFFFFF;
+        margin-left: 10%;
+        padding-bottom: 10%;
+    }
+    a:hover{
+        color: #FFD700;
+    }
+    img{
+        border-radius: 10px;
+    }
+
+    margin-left: 1%;
+
+    color: white;
+
+    margin-bottom: 1%;
+
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    list-style: none;
+    padding: 0;
+
+    li{
+        width: 238px;
+    }
+}
+
+.projects div:hover{
+    transform-origin: left center;
+        animation-name: zoomInAnimation;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: both;
+}
+
+#pfp{
+    align-self: left;
+    border-radius: 50px;
+}
+
+.projects div h2{
+    margin-bottom: 0%;
+    
+}
+
+.projects div h5{
+    margin-top: 0%;
+    padding-left: 1%;
+}
+
+body h2.body{
+    color: white;
+    padding-left: 1%;
+}
+
+body p.body{
+    font-size: 125%;
+    color: white;
+    padding-left: 1%;
+}
+
+body ol li{
+    color: white;
+}
