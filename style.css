@@ -149,3 +149,16 @@ button:hover{
         animation-direction: normal;
         animation-fill-mode: both;
 }
+
+
+@font-face {
+      font-family: 'Minecraft';
+      src: url('https://cdn.jsdelivr.net/gh/aditkumar08/minecraft-font/Minecraft-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+* {
+    font-family: "Minecraft", monospace;
+}
