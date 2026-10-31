@@ -131,3 +131,21 @@ body p.body{
 body ol li{
     color: white;
 }
+
+button{
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 110%;
+
+}
+button:hover{
+    transform-origin: left center;
+        animation-name: zoomInAnimation;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: both;
+}
