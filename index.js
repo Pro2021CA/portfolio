@@ -1,16 +1,35 @@
 function getCodingLanguages(){
-    const languages = ["Python", "Skript", "C++", "Rust", "Luau", "Java", "Kotlin", "HTML", "CSS", "PHP", "JavaScript", "GLSL"]
+    const languages = new Map()
+    languages.set("Skript", 95)
+    languages.set("Python", 90)
+    languages.set("Java", 80)
+    languages.set("Luau", 65)
+    languages.set("JavaScript", 65) 
+    languages.set("HTML", 60)
+    languages.set("CSS", 50)
+    languages.set("Kotlin", 40)
+    languages.set("GLSL", 35)
+    languages.set("C++", 30)
+    languages.set("C#", 30)
+    languages.set("Rust", 25)
+    languages.set("PHP", 15)
+    
 
-    inner = "<ol>"
-    for (let i = 0; i < languages.length; i++){
-        inner = inner + "<li>" + languages[i] + "</li>"
+    inner = ""
+    for (const [language, progress] of languages){
+        inner = inner + "<p class=\"body\">" + language + "</p><div class=\"progress\"><div class=\"bar\" id=\"" + language + "\"><p class=\"body\">" + progress + "%</p></div></div>"
     }
-    inner = inner + "</ol>"
+    inner = inner + ""
 
     document.getElementById("languages").innerHTML = inner;
+
+    for (const [language, progress] of languages){
+        document.getElementById(language).style.paddingRight = progress + "%";
+    }
 }
 
 getCodingLanguages()
+
 
 
 

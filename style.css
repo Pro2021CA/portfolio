@@ -108,12 +108,12 @@ html{
 
 .projects div h2{
     margin-bottom: 0%;
-    
+    padding-left: 2%;
 }
 
 .projects div h5{
     margin-top: 0%;
-    padding-left: 1%;
+    padding-left: 3%;
 }
 
 body h2.body{
@@ -159,4 +159,22 @@ button:hover {
 
 * {
     font-family: "Minecraft", monospace;
+}
+
+
+div.bar{
+    background-color: #00ff80;
+    max-width: 0%;
+    margin-left: 0%;
+    padding-right: 50%;
+
+    p{
+        padding-left: 10px;
+        color:#000000f8;
+    }
+}
+div.progress{
+    margin-left: 3%;
+    max-width: 7.5%;
+    background-color: #0000ff;
 }
