@@ -91,15 +91,14 @@ html{
         width: 238px;
     }
 }
+.projects div{
+    transform-origin: left center;
+    transition: transform 0.5s ease;
+}
+
 
 .projects div:hover{
-    transform-origin: left center;
-        animation-name: zoomInAnimation;
-        animation-duration: 0.5s;
-        animation-timing-function: ease;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    transform: scale(1.1);
 }
 
 #pfp{
@@ -140,14 +139,13 @@ button{
     font-size: 110%;
 
 }
-button:hover{
+button {
     transform-origin: left center;
-        animation-name: zoomInAnimation;
-        animation-duration: 0.5s;
-        animation-timing-function: ease;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 
