@@ -5,7 +5,7 @@
         display: flex;
         justify-content: left;
         align-items: left;
-        gap: 40px;
+        gap: 1%;
         list-style: none;
         padding: 0;
     }
@@ -27,20 +27,13 @@ html{
 }
 
 
-@keyframes zoomInAnimation {
-  0% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(1.1); opacity: 1; }
-}
-
 #header li{
     p:hover{
-        transform-origin: left center;
-        animation-name: zoomInAnimation;
-        animation-duration: 0.5s;
-        animation-timing-function: ease;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+        transform: scale(1.1);
+    }
+    p{
+       transform-origin: left center;
+        transition: transform 0.5s ease; 
     }
 }
 
@@ -83,12 +76,12 @@ html{
 .projects{
     display: flex;
     flex-direction: row;
-    gap:50px;
+    gap:2%;
     list-style: none;
     padding: 0;
 
     li{
-        width: 238px;
+        width: 25%;
     }
 }
 .projects div{
@@ -175,6 +168,25 @@ div.bar{
 }
 div.progress{
     margin-left: 3%;
-    max-width: 7.5%;
+    max-width: 50%;
     background-color: #0000ff;
+}
+
+div#languages{
+    margin-left: 75%;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+#language{
+    margin-top: -13%;
+    margin-left: 70%;
+}
+
+#general{
+    margin-top: -45%;
+}
+
+#servers{
+    margin-right: 27%;
 }
